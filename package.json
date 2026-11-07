@@ -1,0 +1,81 @@
+{
+  "name": "@webship/workspace-drupal-site-templates",
+  "version": "1.0.0",
+  "description": "The Drupal site templates workspace for Webship Workspace: the `site-templates/` folder (type sites), its settings file, its 34 commands and its docs, activated as a plugin.",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "private": true,
+  "license": "ISC",
+  "repository": "github:webship/workspace-drupal-site-templates",
+  "files": [
+    "dist/src",
+    "commands",
+    "config",
+    "docs",
+    "features",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepare": "npm run build",
+    "test": "npm run build && node --test dist/tests/*.test.js",
+    "lint": "tsc -p tsconfig.json --noEmit"
+  },
+  "workspacePlugin": {
+    "name": "drupal-site-templates",
+    "label": "Drupal site templates",
+    "workspace": {
+      "key": "site-templates",
+      "settingsTemplate": "config/workspace.site-templates.settings.yml",
+      "files": [
+        "commands/cmd-archimedes-project.sh",
+        "commands/cmd-byte-project.sh",
+        "commands/cmd-caresphere-project.sh",
+        "commands/cmd-convene-project.sh",
+        "commands/cmd-convivial_gov-project.sh",
+        "commands/cmd-dashi-project.sh",
+        "commands/cmd-everbright-project.sh",
+        "commands/cmd-forma-project.sh",
+        "commands/cmd-goodwell-project.sh",
+        "commands/cmd-haven-project.sh",
+        "commands/cmd-healthcare-project.sh",
+        "commands/cmd-hourglass_inc-project.sh",
+        "commands/cmd-local-project.sh",
+        "commands/cmd-lupus_decoupled_starter-project.sh",
+        "commands/cmd-mercury_demo-project.sh",
+        "commands/cmd-provus_edu-project.sh",
+        "commands/cmd-pulse-project.sh",
+        "commands/cmd-summit-project.sh",
+        "commands/cmd-tools-checks.sh",
+        "commands/cmd-tools-clone.sh",
+        "commands/cmd-tools-graphify.sh",
+        "commands/cmd-tools-obsidian.sh",
+        "commands/cmd-tools-ragify.sh",
+        "commands/cmd-tools-reclaim.sh",
+        "commands/cmd-tools-remove.sh",
+        "commands/cmd-tools-screen.sh",
+        "commands/cmd-webapi_starter-1-0-x-project.sh",
+        "commands/cmd-webship_portal-1-0-x-project.sh",
+        "commands/cmd-webship_starter-1-0-x-project.sh",
+        "commands/cmd-webships_project-1-0-x-project.sh",
+        "commands/cmd-webships_starter-1-0-x-project.sh",
+        "commands/cmd-website-1-0-x-project.sh",
+        "commands/cmd-website_starter-1-0-x-project.sh",
+        "commands/cmd-website_starter-project.sh"
+      ],
+      "docs": [
+        "docs/AGENTS.md",
+        "docs/CLAUDE.md",
+        "docs/README.md"
+      ]
+    },
+    "features": [
+      "features/drupal-site-templates.feature"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@webship/workspace-plugin-api": "github:webship/workspace-plugin-api#1.0.x",
+    "typescript": "^5.9.0"
+  }
+}
