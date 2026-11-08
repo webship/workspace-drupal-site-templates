@@ -20,39 +20,6 @@ The settings file and the docs are placed once and never overwritten: they hold 
 
 | Command |
 | --- |
-| `cmd-archimedes-project.sh` |
-| `cmd-byte-project.sh` |
-| `cmd-caresphere-project.sh` |
-| `cmd-convene-project.sh` |
-| `cmd-convivial_gov-project.sh` |
-| `cmd-dashi-project.sh` |
-| `cmd-everbright-project.sh` |
-| `cmd-forma-project.sh` |
-| `cmd-goodwell-project.sh` |
-| `cmd-haven-project.sh` |
-| `cmd-healthcare-project.sh` |
-| `cmd-hourglass_inc-project.sh` |
-| `cmd-local-project.sh` |
-| `cmd-lupus_decoupled_starter-project.sh` |
-| `cmd-mercury_demo-project.sh` |
-| `cmd-provus_edu-project.sh` |
-| `cmd-pulse-project.sh` |
-| `cmd-summit-project.sh` |
-| `cmd-tools-checks.sh` |
-| `cmd-tools-clone.sh` |
-| `cmd-tools-graphify.sh` |
-| `cmd-tools-obsidian.sh` |
-| `cmd-tools-ragify.sh` |
-| `cmd-tools-reclaim.sh` |
-| `cmd-tools-remove.sh` |
-| `cmd-tools-screen.sh` |
-| `cmd-webapi_starter-1-0-x-project.sh` |
-| `cmd-webship_portal-1-0-x-project.sh` |
-| `cmd-webship_starter-1-0-x-project.sh` |
-| `cmd-webships_project-1-0-x-project.sh` |
-| `cmd-webships_starter-1-0-x-project.sh` |
-| `cmd-website-1-0-x-project.sh` |
-| `cmd-website_starter-1-0-x-project.sh` |
-| `cmd-website_starter-project.sh` |
+| (none) |
 
 The bash functions these commands call live in the dashboard's `core/scripts/functions`.
