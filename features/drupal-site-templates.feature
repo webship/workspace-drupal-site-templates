@@ -4,9 +4,10 @@ Feature: The Drupal site templates workspace plugin
 
   Scenario: The workspace page is there
     Given I am on "/site-templates"
-     Then I should see "Drupal site templates"
+     Then the element "h1" should be displayed
+      And the element "#webship-workspace-projects, .items-list, .workspace-page" should be attached
 
   Scenario: The plugin is listed on the Plugins page
     Given I am on "/settings/plugins"
      Then I should see "Drupal site templates"
-      And I should see "@webship/workspace-drupal-site-templates"
+      And I should see "@webship.co/workspace-drupal-site-templates"
