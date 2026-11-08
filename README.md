@@ -1,4 +1,4 @@
-# @webship/workspace-drupal-site-templates
+# @webship.co/workspace-drupal-site-templates
 
 The **Drupal site templates** workspace of the [Webship Workspace](https://github.com/webship/workspace) dashboard:
 the `site-templates/` folder (type `sites`), its settings file (`core/config/workspace.site-templates.settings.yml`),
