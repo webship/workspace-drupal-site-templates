@@ -1,7 +1,7 @@
 {
   "name": "@webship.co/workspace-drupal-site-templates",
   "version": "1.0.8",
-  "description": "The Drupal site templates workspace for Webship Workspace: the `site-templates/` folder (type sites), its settings file, its 31 commands and its docs, activated as a plugin.",
+  "description": "The Drupal site templates workspace for Webship Workspace: the `site-templates/` folder (type sites), its settings file, its 31 commands, its docs and its AI items (an agent, a skill, a command and a prompt, each in the folder of its kind), activated as a plugin.",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
   "license": "ISC",
@@ -11,6 +11,7 @@
   },
   "files": [
     "dist/src",
+    "ai",
     "commands",
     "config",
     "docs",
@@ -26,6 +27,12 @@
   "workspacePlugin": {
     "name": "drupal-site-templates",
     "label": "Drupal site templates",
+    "needs": [
+      "ai-agents",
+      "ai-skills",
+      "ai-commands",
+      "ai-prompts"
+    ],
     "workspace": {
       "key": "site-templates",
       "settingsTemplate": "config/workspace.site-templates.settings.yml",
@@ -66,6 +73,20 @@
         "docs/AGENTS.md",
         "docs/CLAUDE.md",
         "docs/README.md"
+      ]
+    },
+    "ai": {
+      "agents": [
+        "ai/agents/site-templates-builder.md"
+      ],
+      "skills": [
+        "ai/skills/site-templates-workflow"
+      ],
+      "commands": [
+        "ai/commands/site-templates-build.md"
+      ],
+      "prompts": [
+        "ai/prompts/site-templates-build-and-compare.md"
       ]
     },
     "features": [
