@@ -2,7 +2,7 @@
  * The Drupal site templates workspace for Webship Workspace: the `site-templates/` folder as a plugin.
  *
  * What the package carries is placed by the installer from the manifest (the folder's settings file,
- * its commands and its docs) and listed by --activate; the dashboard draws the workspace from the
+ * its commands, its docs and its AI items, each in the folder of its kind) and listed by --activate; the dashboard draws the workspace from the
  * settings file like any other. Nothing to register at run time yet: this is where the folder's own
  * rail buttons, row menus or assistant context would go.
  */
@@ -11,6 +11,12 @@ import type { PluginApi } from '@webship.co/workspace-plugin-api';
 
 export const WORKSPACE_KEY = 'site-templates';
 
+/** The AI items the installer places, each in the workspace folder of its kind (ai/ in this package). */
+export const AGENTS = ['site-templates-builder'];
+export const SKILLS = ['site-templates-workflow'];
+export const AI_COMMANDS = ['site-templates-build'];
+export const PROMPTS = ['site-templates-build-and-compare'];
+
 export function register(api: PluginApi): void {
-  api.addAssistantContext(() => `The site-templates/ workspace is the Drupal site templates workspace (a plugin, @webship.co/workspace-drupal-site-templates); its commands are the cmd-*.sh scripts in that folder.`);
+  api.addAssistantContext(() => `The site-templates/ workspace is the Drupal site templates workspace (a plugin, @webship.co/workspace-drupal-site-templates); its commands are the cmd-*.sh scripts in that folder. It comes with AI items for work in this folder: the agent \`site-templates-builder\` (ai-agents/), the skill \`site-templates-workflow\` (ai-skills/), the command \`/site-templates-build\` (ai-commands/) and the prompt \`site-templates-build-and-compare\` (ai-prompts/).`);
 }

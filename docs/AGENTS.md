@@ -110,3 +110,13 @@ install.
 
 The curated list carries one **paid** template (Meridian Charter, `dripyard/…`), which needs a
 licence key at install time. It has no builder here — add one the same shape if you buy it.
+
+## AI items for this folder
+
+The plugin of this folder (`@webship.co/workspace-drupal-site-templates`) places its own AI items in the AI folders of the
+workspace, when they are active:
+
+- `site-templates-builder` (`ai-agents/`): Builds a site from a site template in `site-templates/` (a Drupal CMS one or a Webship one), says what the template made of it, clones it and removes it
+- `site-templates-workflow` (`ai-skills/`): How work is done in `site-templates/`: pick, build, look, clear; every builder with its flags, the tools, the settings keys
+- `/site-templates-build` (`ai-commands/`): `/site-templates-build <template> <name>`: finds the builder, checks the name is free, builds and says what the template made of the site
+- `site-templates-build-and-compare` (`ai-prompts/`): A new session that builds two site templates and says how the sites differ

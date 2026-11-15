@@ -1,0 +1,122 @@
+{
+  "_from": "webship/workspace 1.0.10: core/scripts/args/*.sh and the argparse block of each command of this folder",
+  "_aiFolders": {
+    "cmd-tools-ai-items.sh": [
+      "--add",
+      "--check",
+      "--clone-to",
+      "--confirm",
+      "--fetch",
+      "--filter",
+      "--install",
+      "--list-remote",
+      "--propose",
+      "--pull",
+      "--purpose",
+      "--source",
+      "--status",
+      "--summary",
+      "--to",
+      "--update"
+    ]
+  },
+  "_workspace": [
+    "--help",
+    "--require",
+    "--activate",
+    "--install",
+    "--configure",
+    "--deactivate",
+    "--uninstall",
+    "--check",
+    "--list",
+    "--with-needs",
+    "--permission-mode"
+  ],
+  "cmd-archimedes-project.sh": [],
+  "cmd-byte-project.sh": [],
+  "cmd-caresphere-project.sh": [],
+  "cmd-convene-project.sh": [],
+  "cmd-convivial_gov-project.sh": [],
+  "cmd-dashi-project.sh": [],
+  "cmd-everbright-project.sh": [],
+  "cmd-forma-project.sh": [],
+  "cmd-goodwell-project.sh": [],
+  "cmd-haven-project.sh": [],
+  "cmd-healthcare-project.sh": [],
+  "cmd-hourglass_inc-project.sh": [],
+  "cmd-local-project.sh": [],
+  "cmd-lupus_decoupled_starter-project.sh": [],
+  "cmd-mercury_demo-project.sh": [],
+  "cmd-provus_edu-project.sh": [],
+  "cmd-pulse-project.sh": [],
+  "cmd-summit-project.sh": [],
+  "cmd-tools-checks.sh": [
+    "--browser",
+    "--e2e",
+    "--fail-fast",
+    "--install",
+    "--list",
+    "--only",
+    "--runner",
+    "--skip"
+  ],
+  "cmd-tools-clone.sh": [
+    "--branch",
+    "--extra-hostname",
+    "--no-build-copy",
+    "--no-db",
+    "--target-workspace",
+    "--to",
+    "--with-workspace-hostname",
+    "--worktree"
+  ],
+  "cmd-tools-reclaim.sh": [
+    "--apply",
+    "--keep-days",
+    "--list-protected",
+    "--only"
+  ],
+  "cmd-tools-remove.sh": [
+    "--backup",
+    "--force",
+    "--orphans"
+  ],
+  "cmd-tools-screen.sh": [
+    "--follow",
+    "--list",
+    "--log",
+    "--run",
+    "--stop"
+  ],
+  "cmd-webapi_starter-1-0-x-project.sh": [
+    "--add-users"
+  ],
+  "cmd-webship_portal-1-0-x-project.sh": [
+    "--add-users",
+    "--with-pending-fixes"
+  ],
+  "cmd-webship_starter-1-0-x-project.sh": [
+    "--add-users",
+    "--with-pending-fixes"
+  ],
+  "cmd-webships_project-1-0-x-project.sh": [
+    "--add-users",
+    "--php-version",
+    "--template"
+  ],
+  "cmd-webships_starter-1-0-x-project.sh": [
+    "--add-users"
+  ],
+  "cmd-website-1-0-x-project.sh": [
+    "--add-users",
+    "--php-version",
+    "--template",
+    "--with-pending-fixes"
+  ],
+  "cmd-website_starter-1-0-x-project.sh": [
+    "--add-users",
+    "--with-pending-fixes"
+  ],
+  "cmd-website_starter-project.sh": []
+}
