@@ -1,5 +1,5 @@
 ---
-description: Build a site from a site template in the site-templates/ folder of the Webship Workspace: find the builder of the template, check the name is free, build, and say what the template made of the site.
+description: Build a site from a site template in the site-templates/ folder of the Webship Workspace — find the builder of the template, check the name is free, build, and say what the template made of the site.
 argument-hint: '<template> <name>'
 ---
 
